@@ -11,7 +11,12 @@ function drawPanel(){
         isDrawingMode: true
     });
 
-    var drawingColorEl = $('drawing-color');
+    var drawingColorEl = $('drawing-color'),
+    clearEl = $('clear-canvas');
+
+    clearEl.onclick = function(){
+        canvas.clear();
+    }
 
     $('drawing-mode-selector').onchange = function () {
 
