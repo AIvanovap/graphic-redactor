@@ -38,8 +38,13 @@
                 </li>
             </ul>
         </div>
-        <!--/.nav-collapse -->
     </div>
+<script>
+    $(".nav a").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+    });
+</script>
 </div>
 </body>
 </html>
